@@ -7,4 +7,18 @@ public class UIButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
+
+    public void Settings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
+    
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
