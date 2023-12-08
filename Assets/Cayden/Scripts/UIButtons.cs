@@ -21,4 +21,10 @@ public class UIButtons : MonoBehaviour
     {
         Application.Quit();
     }
+    public void Resume()
+    {
+        Time.timeScale = 1;
+        GameObject pause =  GameObject.Find("Pause");
+        pause.GetComponent<Pause>().unPause();
+    }
 }
