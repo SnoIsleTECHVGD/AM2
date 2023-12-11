@@ -32,4 +32,9 @@ public class UIButtons : MonoBehaviour
         GameObject pause = GameObject.Find("Pause");
         pause.GetComponent<Pause>().Pausening();
     }
+
+    public void Back()
+    {
+        SceneManager.LoadScene("Title");
+    }
 }
