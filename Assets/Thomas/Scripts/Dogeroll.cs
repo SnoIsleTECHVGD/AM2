@@ -15,4 +15,12 @@ public class Dogeroll : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         dashTime = startDashTime;
     }
+
+    private void Update()
+    {
+        if(direction == 0)
+        {
+            if(Input.GetKeyDown(KeyCode.A))
+        }
+    }
 }
