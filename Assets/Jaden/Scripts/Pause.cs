@@ -18,11 +18,14 @@ public class Pause : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            Time.timeScale = 0;
-            pauseText.SetActive(true);
-            button1.SetActive(true);
-            button2.SetActive(true);
+            Pausening();
         }
+    }
+    public void Pausening() {
+        Time.timeScale = 0;
+        pauseText.SetActive(true);
+        button1.SetActive(true);
+        button2.SetActive(true);
     }
     public void unPause()
     {

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class UIButtons : MonoBehaviour
 {
+    GameObject newObject;
     public void Play()
     {
         SceneManager.LoadScene("Main");
@@ -23,8 +24,12 @@ public class UIButtons : MonoBehaviour
     }
     public void Resume()
     {
-        Time.timeScale = 1;
         GameObject pause =  GameObject.Find("Pause");
         pause.GetComponent<Pause>().unPause();
+    }
+    public void Pause()
+    {
+        GameObject pause = GameObject.Find("Pause");
+        pause.GetComponent<Pause>().Pausening();
     }
 }
