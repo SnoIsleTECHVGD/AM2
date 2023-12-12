@@ -21,6 +21,9 @@ public class Dogeroll : MonoBehaviour
         if(direction == 0)
         {
             if(Input.GetKeyDown(KeyCode.A))
+            {
+
+            }
         }
     }
 }
