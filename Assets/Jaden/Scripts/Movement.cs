@@ -6,11 +6,13 @@ public class Movement : MonoBehaviour
 {
     public float speed;
     Rigidbody2D rb2d;
-    public int jumpSpeed;
+    public float jumpSpeed;
     public int maxSpeed;
     public int fallSpeed;
-    public int maxJump;
+    public float maxJump;
     private bool grounded;
+    public float cooldown;
+    [SerializeField] private bool dashing;
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +58,11 @@ public class Movement : MonoBehaviour
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, maxJump);
         }
+        if(Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            StartCoroutine(Dash());
+        }
+        cooldown -= .01f;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -63,5 +70,24 @@ public class Movement : MonoBehaviour
         {
             grounded = true;
         }
+    }
+    private IEnumerator Dash()
+    {
+        if (cooldown <= 0)
+        {
+            dashing = true;
+            speed = speed * 2;
+            maxSpeed = maxSpeed * 2;
+            jumpSpeed = jumpSpeed * 1.3f;
+            maxJump = maxJump * 1.3f;
+            cooldown = 15;
+            yield return new WaitForSeconds(.25f);
+            speed = speed / 2;
+            maxSpeed = maxSpeed / 2;
+            jumpSpeed = jumpSpeed / 1.3f;
+            maxJump = maxJump / 1.3f;
+            dashing = false;
+        }
+        
     }
 }
