@@ -18,30 +18,43 @@ public class Trigger : MonoBehaviour
     {
         
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private IEnumerator OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision == player)
+        if (collision.gameObject == player)
         {
+
             Popups stuff = popupObject.GetComponent<Popups>();
             if (popupNum == 1)
             {
                 stuff.isVisible1 = true;
-            } else if (popupNum == 2)
+                yield return new WaitForSeconds(5);
+                stuff.isVisible1 = false;
+            }
+            else if (popupNum == 2)
             {
                 stuff.isVisible2 = true;
+                yield return new WaitForSeconds(5);
+                stuff.isVisible1 = false;
             }
             else if (popupNum == 3)
             {
                 stuff.isVisible3 = true;
+                yield return new WaitForSeconds(5);
+                stuff.isVisible1 = false;
             }
             else if (popupNum == 4)
             {
                 stuff.isVisible4 = true;
+                yield return new WaitForSeconds(5);
+                stuff.isVisible1 = false;
             }
             else if (popupNum == 5)
             {
                 stuff.isVisible5 = true;
+                yield return new WaitForSeconds(5);
+                stuff.isVisible1 = false;
             }
+            Destroy(gameObject);
         }
     } 
 }
