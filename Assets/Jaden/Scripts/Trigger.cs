@@ -22,7 +22,26 @@ public class Trigger : MonoBehaviour
     {
         if (collision == player)
         {
-
+            Popups stuff = popupObject.GetComponent<Popups>();
+            if (popupNum == 1)
+            {
+                stuff.isVisible1 = true;
+            } else if (popupNum == 2)
+            {
+                stuff.isVisible2 = true;
+            }
+            else if (popupNum == 3)
+            {
+                stuff.isVisible3 = true;
+            }
+            else if (popupNum == 4)
+            {
+                stuff.isVisible4 = true;
+            }
+            else if (popupNum == 5)
+            {
+                stuff.isVisible5 = true;
+            }
         }
     } 
 }
