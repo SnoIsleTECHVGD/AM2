@@ -32,6 +32,7 @@ public class Movement : MonoBehaviour
             {
                 rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
                 grounded = false;
+                animator.SetBool("IsJump",true);
             }
         }
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
@@ -77,6 +78,7 @@ public class Movement : MonoBehaviour
         if(collision.gameObject.CompareTag("Platform"))
         {
             grounded = true;
+            animator.SetBool("IsJump", false);
         }
     }
     private IEnumerator Dash()
