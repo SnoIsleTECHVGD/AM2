@@ -6,15 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Cayden/Scenes/Title.unity
+    path: Assets/Cayden/Scenes_C/Title.unity
     guid: 1fb8dc1db13faef40ac4207def20358e
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Cayden/Scenes/Settings.unity
+    path: Assets/Cayden/Scenes_C/Settings.unity
     guid: 058b5ae1af6f64c41b36e9b299f98598
   - enabled: 1
-    path: Assets/Cayden/Scenes/Credits.unity
+    path: Assets/Cayden/Scenes_C/Credits.unity
     guid: 0a16fd32f51cf474886670f1e611a4de
   m_configObjects: {}
