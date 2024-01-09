@@ -12,6 +12,7 @@ public class HealthTestPlayer : MonoBehaviour
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
+    /*
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Enemy")
@@ -32,13 +33,14 @@ public class HealthTestPlayer : MonoBehaviour
             currentHealth = maxHealth;
         }
     }
-    /*}void Update()
+    */
+    void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             TakeDamage(10);
         }
-        if (Input.GetKeyDown(KeyCode.H))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             Heal(10);
         }
@@ -51,7 +53,7 @@ public class HealthTestPlayer : MonoBehaviour
             currentHealth = maxHealth;
         }
     }
-    */
+    
 
     void TakeDamage(int damage)
     {

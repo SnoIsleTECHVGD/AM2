@@ -6,9 +6,8 @@ public class UIButtons : MonoBehaviour
     GameObject newObject;
     public void Play()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("Thomas");
     }
-
     public void Settings()
     {
         SceneManager.LoadScene("Settings");
@@ -17,7 +16,6 @@ public class UIButtons : MonoBehaviour
     {
         SceneManager.LoadScene("Credits");
     }
-    
     public void Exit()
     {
         Application.Quit();
@@ -32,7 +30,6 @@ public class UIButtons : MonoBehaviour
         GameObject pause = GameObject.Find("Pause");
         pause.GetComponent<Pause>().Pausening();
     }
-
     public void Back()
     {
         SceneManager.LoadScene("Title");
