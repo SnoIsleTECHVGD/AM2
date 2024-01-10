@@ -90,7 +90,7 @@ public class Movement : MonoBehaviour
             maxSpeed = maxSpeed * 2;
             jumpSpeed = jumpSpeed * 1.3f;
             maxJump = maxJump * 1.3f;
-            cooldown = 15;
+            cooldown = 4 ;
             yield return new WaitForSeconds(.25f);
             speed = speed / 2;
             maxSpeed = maxSpeed / 2;

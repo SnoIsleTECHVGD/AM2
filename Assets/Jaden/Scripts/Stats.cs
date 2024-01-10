@@ -6,12 +6,6 @@ public class Stats : MonoBehaviour
 {
     public int health;
     public int attack;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     public void TakeDamage(int damage)
     {
