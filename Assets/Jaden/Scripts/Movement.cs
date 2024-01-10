@@ -70,6 +70,7 @@ public class Movement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             StartCoroutine(Dash());
+            
         }
         cooldown -= .01f;
     }
@@ -85,18 +86,21 @@ public class Movement : MonoBehaviour
     {
         if (cooldown <= 0)
         {
+            
             dashing = true;
             speed = speed * 2;
             maxSpeed = maxSpeed * 2;
             jumpSpeed = jumpSpeed * 1.3f;
             maxJump = maxJump * 1.3f;
-            cooldown = 4 ;
-            yield return new WaitForSeconds(.25f);
+            cooldown = 5.5f ;
+            yield return new WaitForSeconds(.5f);
             speed = speed / 2;
             maxSpeed = maxSpeed / 2;
             jumpSpeed = jumpSpeed / 1.3f;
             maxJump = maxJump / 1.3f;
             dashing = false;
+           
+
         }
         
     }
