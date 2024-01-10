@@ -9,6 +9,12 @@ public class Stats : MonoBehaviour
     // Update is called once per frame
     public void TakeDamage(int damage)
     {
+        if (gameObject.name == "Player")
+        {
+            Movement movementScript = GetComponent<Movement>();
+            if (movementScript.dashing == false)
+                health -= damage;
+        } else 
         health -= damage;
         if(health <= 0)
         {

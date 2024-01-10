@@ -29,26 +29,25 @@ public class BulletScript : MonoBehaviour
 
         Destroy(gameObject, 6.0f);
     }
-
-    // Hit Detect
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 2) // Ignore Raycast
+        if (shouldHitPlayers == false && collision.name == "Player") // Ignore Raycast
             return;
 
         Stats hitStats = collision.gameObject.GetComponent<Stats>();
 
         if (hitStats != null)
         {
-            
 
-            
+
+
 
             hitStats.TakeDamage(bulletDamage);
         }
 
         Destroy(gameObject);
     }
+    
 
     
 

@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour
     public float maxJump;
     private bool grounded;
     public float cooldown;
-    [SerializeField] private bool dashing;
+    public bool dashing;
 
     Animator animator;
     // Start is called before the first frame update
