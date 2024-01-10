@@ -16,6 +16,7 @@ public class ImageFade : MonoBehaviour
 
     public void Start()
     {
+        imgNum = 1;
         img2.color = new Color(1, 1, 1, 0);
         img3.color = new Color(1, 1, 1, 0);
         img4.color = new Color(1, 1, 1, 0);
