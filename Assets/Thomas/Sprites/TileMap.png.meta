@@ -343,12 +343,12 @@ TextureImporter:
       name: TileMap_5
       rect:
         serializedVersion: 2
-        x: 1610
-        y: 2881
-        width: 322
-        height: 327
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1612
+        y: 3031
+        width: 320
+        height: 110
+      alignment: 9
+      pivot: {x: 0.506752, y: 1.4678401}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -427,9 +427,9 @@ TextureImporter:
       name: TileMap_9
       rect:
         serializedVersion: 2
-        x: 2880
+        x: 2892
         y: 2880
-        width: 321
+        width: 309
         height: 328
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -472,9 +472,9 @@ TextureImporter:
         x: 320
         y: 2556
         width: 321
-        height: 315
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 284
+      alignment: 9
+      pivot: {x: 0.4999997, y: 0.5858715}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -557,8 +557,8 @@ TextureImporter:
         y: 2558
         width: 321
         height: 276
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5000008, y: 0.5819702}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
