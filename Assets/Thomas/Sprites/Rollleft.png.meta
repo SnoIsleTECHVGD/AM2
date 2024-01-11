@@ -1,0 +1,372 @@
+fileFormatVersion: 2
+guid: 4958886dfd411de46abc5165912fbb76
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2743380215002565784
+    second: Rollleft_0
+  - first:
+      213: -779198381584781128
+    second: Rollleft_1
+  - first:
+      213: -3002486973633209038
+    second: Rollleft_2
+  - first:
+      213: 8610510807339871480
+    second: Rollleft_3
+  - first:
+      213: -6737289871246762437
+    second: Rollleft_4
+  - first:
+      213: -8554690674798604875
+    second: Rollleft_5
+  - first:
+      213: -5212613368423129598
+    second: Rollleft_6
+  - first:
+      213: 3213925609789765864
+    second: Rollleft_7
+  - first:
+      213: -1493683956805876076
+    second: Rollleft_8
+  - first:
+      213: 2982636802022429312
+    second: Rollleft_9
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 350
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rollleft_0
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 970
+        height: 1484
+      alignment: 9
+      pivot: {x: 0.6154032, y: 0.42456794}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c001f35c1721620800000000000000
+      internalID: 2743380215002565784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rollleft_1
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 0
+        width: 809
+        height: 1484
+      alignment: 9
+      pivot: {x: 0.5188687, y: 0.3559934}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b07418433bbf25f0800000000000000
+      internalID: -779198381584781128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rollleft_2
+      rect:
+        serializedVersion: 2
+        x: 2295
+        y: 0
+        width: 839
+        height: 1484
+      alignment: 9
+      pivot: {x: 0.5291843, y: 0.4621426}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ddadd51060556d0800000000000000
+      internalID: -3002486973633209038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rollleft_3
+      rect:
+        serializedVersion: 2
+        x: 3175
+        y: 0
+        width: 705
+        height: 1484
+      alignment: 9
+      pivot: {x: 0.52518356, y: 0.44742793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fca72675fdae7770800000000000000
+      internalID: 8610510807339871480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rollleft_4
+      rect:
+        serializedVersion: 2
+        x: 3880
+        y: 0
+        width: 970
+        height: 1484
+      alignment: 9
+      pivot: {x: 0.7837548, y: 0.46267924}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3edf7bce865082a0800000000000000
+      internalID: -6737289871246762437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rollleft_5
+      rect:
+        serializedVersion: 2
+        x: 4850
+        y: 0
+        width: 1021
+        height: 1484
+      alignment: 9
+      pivot: {x: 0.49920565, y: 0.5008798}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd484de722a74980800000000000000
+      internalID: -8554690674798604875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rollleft_6
+      rect:
+        serializedVersion: 2
+        x: 5884
+        y: 0
+        width: 906
+        height: 1484
+      alignment: 9
+      pivot: {x: 0.54554164, y: 0.5192226}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20edfaf42c319a7b0800000000000000
+      internalID: -5212613368423129598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rollleft_7
+      rect:
+        serializedVersion: 2
+        x: 6794
+        y: 0
+        width: 970
+        height: 1484
+      alignment: 9
+      pivot: {x: 0.61106235, y: 0.5230101}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8bc0260582a9c20800000000000000
+      internalID: 3213925609789765864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rollleft_8
+      rect:
+        serializedVersion: 2
+        x: 7760
+        y: 0
+        width: 970
+        height: 1484
+      alignment: 9
+      pivot: {x: 0.520983, y: 0.5205723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 496c2ebea5e554be0800000000000000
+      internalID: -1493683956805876076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rollleft_9
+      rect:
+        serializedVersion: 2
+        x: 8730
+        y: 0
+        width: 970
+        height: 1484
+      alignment: 9
+      pivot: {x: 0.42131624, y: 0.5651458}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082dd866e54746920800000000000000
+      internalID: 2982636802022429312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

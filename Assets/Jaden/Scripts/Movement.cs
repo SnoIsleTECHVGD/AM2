@@ -86,7 +86,7 @@ public class Movement : MonoBehaviour
     {
         if (cooldown <= 0)
         {
-            
+            animator.SetBool("IsDoge", true);
             dashing = true;
             speed = speed * 2;
             maxSpeed = maxSpeed * 2;
@@ -99,7 +99,7 @@ public class Movement : MonoBehaviour
             jumpSpeed = jumpSpeed / 1.3f;
             maxJump = maxJump / 1.3f;
             dashing = false;
-           
+            animator.SetBool("IsDoge", false);
 
         }
         
