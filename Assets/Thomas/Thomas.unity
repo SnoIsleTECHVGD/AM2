@@ -10588,6 +10588,7 @@ MonoBehaviour:
   maxJump: 10
   cooldown: 0
   dashing: 0
+  intervalBetweenDashing: 1
 --- !u!95 &1812898238
 Animator:
   serializedVersion: 3

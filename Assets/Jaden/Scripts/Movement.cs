@@ -13,7 +13,8 @@ public class Movement : MonoBehaviour
     private bool grounded = true;
     public float cooldown = 0;
     public bool dashing = false;
-
+    private float lastCooldown;
+    public float intervalBetweenDashing;
     Animator animator;
     // Start is called before the first frame update
     void Start()
@@ -72,7 +73,7 @@ public class Movement : MonoBehaviour
             StartCoroutine(Dash());
             
         }
-        cooldown -= .01f;
+        cooldown = Time.realtimeSinceStartup  - lastCooldown - intervalBetweenDashing;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -84,8 +85,9 @@ public class Movement : MonoBehaviour
     }
     private IEnumerator Dash()
     {
-        if (cooldown <= 0)
+        if (cooldown >= 0)
         {
+            lastCooldown = Time.realtimeSinceStartup;
             animator.SetBool("IsDoge", true);
             dashing = true;
             speed = speed * 2;
