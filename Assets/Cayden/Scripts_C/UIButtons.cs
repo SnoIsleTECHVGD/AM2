@@ -32,6 +32,7 @@ public class UIButtons : MonoBehaviour
     }
     public void Back()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Title");
     }
 }

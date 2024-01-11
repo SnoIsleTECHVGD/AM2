@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed;
+    public float speed = 6.5f;
     Rigidbody2D rb2d;
-    public float jumpSpeed;
-    public int maxSpeed;
-    public int fallSpeed;
-    public float maxJump;
-    private bool grounded;
-    public float cooldown;
-    public bool dashing;
+    public float jumpSpeed = 75;
+    public int maxSpeed = 10;
+    public int fallSpeed = 10;
+    public float maxJump = 10;
+    private bool grounded = true;
+    public float cooldown = 0;
+    public bool dashing = false;
 
     Animator animator;
     // Start is called before the first frame update
