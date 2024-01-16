@@ -21,7 +21,7 @@ public class SpawnBullet : MonoBehaviour
             Vector2 direction = target - myPos;
             direction.Normalize();
             Quaternion rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 180);
-            GameObject projectile = Instantiate(bullet, transform.position, rotation);
+            GameObject projectile = Instantiate(bullet, transform.position + new Vector3(0,.5f,0), rotation);
             projectile.SetActive(true);
             projectile.GetComponent<Rigidbody2D>().velocity = direction * 5 * speed;
         }
