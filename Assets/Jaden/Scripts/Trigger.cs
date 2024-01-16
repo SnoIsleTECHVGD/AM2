@@ -34,25 +34,25 @@ public class Trigger : MonoBehaviour
             {
                 stuff.isVisible2 = true;
                 yield return new WaitForSeconds(5);
-                stuff.isVisible1 = false;
+                stuff.isVisible2 = false;
             }
             else if (popupNum == 3)
             {
                 stuff.isVisible3 = true;
                 yield return new WaitForSeconds(5);
-                stuff.isVisible1 = false;
+                stuff.isVisible3 = false;
             }
             else if (popupNum == 4)
             {
                 stuff.isVisible4 = true;
                 yield return new WaitForSeconds(5);
-                stuff.isVisible1 = false;
+                stuff.isVisible4 = false;
             }
             else if (popupNum == 5)
             {
                 stuff.isVisible5 = true;
                 yield return new WaitForSeconds(5);
-                stuff.isVisible1 = false;
+                stuff.isVisible5 = false;
             }
             Destroy(gameObject);
         }
