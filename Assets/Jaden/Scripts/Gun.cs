@@ -6,11 +6,13 @@ public class Gun : MonoBehaviour
     public float fireTime = 1;
     public GameObject Bullet;
     public Vector3 bulletOffset;
+    Animator animator;
 
     private float bulletCooldown = 0;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
     }
 
     void FixedUpdate() // Shoot bullets every frame.

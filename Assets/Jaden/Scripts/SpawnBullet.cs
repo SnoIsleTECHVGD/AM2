@@ -8,22 +8,37 @@ public class SpawnBullet : MonoBehaviour
     public GameObject theCamera;
     public Vector3 HELPPP;
     public int speed;
-    // Update is called once per frame
+    Animator animator;
+    public bool canShoot = true;
     void Update()
     {
+        animator = GetComponent<Animator>();
         HELPPP = Input.mousePosition;
         mousePos = theCamera.transform.GetComponent<Camera>().ScreenToWorldPoint(Input.mousePosition);
         
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetMouseButtonDown(0) && canShoot)
         {
-            Vector2 target = theCamera.transform.GetComponent<Camera>().ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
-            Vector2 myPos = new Vector2(transform.position.x, transform.position.y);
-            Vector2 direction = target - myPos;
-            direction.Normalize();
-            Quaternion rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 180);
-            GameObject projectile = Instantiate(bullet, transform.position + new Vector3(0,.5f,0), rotation);
-            projectile.SetActive(true);
-            projectile.GetComponent<Rigidbody2D>().velocity = direction * 5 * speed;
+            StartCoroutine(ewaewaah());
         }
+    }
+
+    IEnumerator ewaewaah()
+    {
+        canShoot = false;
+        animator.SetBool("IsShooting", true);
+        GetComponent<Movement>().enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        Vector2 target = theCamera.transform.GetComponent<Camera>().ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
+        Vector2 myPos = new Vector2(transform.position.x, transform.position.y);
+        Vector2 direction = target - myPos;
+        direction.Normalize();
+        Quaternion rotation = Quaternion.Euler(0, 0, Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg + 180);
+        GameObject projectile = Instantiate(bullet, transform.position + new Vector3(0, .5f, 0), rotation);
+        projectile.SetActive(true);
+        projectile.GetComponent<Rigidbody2D>().velocity = direction * 5 * speed;
+        yield return new WaitForSeconds(0.2f);
+        GetComponent<Movement>().enabled = true;
+        animator.SetBool("IsShooting", false);
+        canShoot = true;
     }
 }
