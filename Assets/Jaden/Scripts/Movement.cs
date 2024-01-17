@@ -16,12 +16,14 @@ public class Movement : MonoBehaviour
     private float lastCooldown;
     public float intervalBetweenDashing;
     Animator animator;
+    public GameObject WalkingParticle;
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         grounded = true;
         animator = GetComponent<Animator>();
+        WalkingParticle = GameObject.Find("WalkingParticles");
     }
 
     // Update is called once per frame
@@ -47,10 +49,13 @@ public class Movement : MonoBehaviour
             rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
             animator.SetInteger("LastDir", 0);
             animator.SetInteger("WalkDir", 1);
-        } else
+            WalkingParticle.GetComponent<ParticleSystem>().Play();
+        } 
+        else
         {
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
             animator.SetInteger("WalkDir", 0);
+            WalkingParticle.GetComponent<ParticleSystem>().Stop();
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
@@ -68,12 +73,27 @@ public class Movement : MonoBehaviour
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, maxJump);
         }
-        if(Input.GetKeyDown(KeyCode.LeftShift))
+        if(Input.GetKeyDown(KeyCode.LeftShift) && grounded)
         {
             StartCoroutine(Dash());
             
         }
         cooldown = Time.realtimeSinceStartup  - lastCooldown - intervalBetweenDashing;
+
+
+        //Particle Stuff :))))))))))))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            WalkingParticle.GetComponent<ParticleSystem>().Play();
+        }
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            WalkingParticle.GetComponent<ParticleSystem>().Play();
+        }
+        else
+        {
+            WalkingParticle.GetComponent<ParticleSystem>().Stop();
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

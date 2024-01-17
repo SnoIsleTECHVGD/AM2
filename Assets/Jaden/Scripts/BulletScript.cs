@@ -31,17 +31,13 @@ public class BulletScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (shouldHitPlayers == false && collision.name == "Player") // Ignore Raycast
+        if (shouldHitPlayers == false && collision.name == "Player" || collision.tag == "TextBox") // Ignore Raycast
             return;
 
         Stats hitStats = collision.gameObject.GetComponent<Stats>();
 
         if (hitStats != null)
         {
-
-
-
-
             hitStats.TakeDamage(bulletDamage);
         }
 

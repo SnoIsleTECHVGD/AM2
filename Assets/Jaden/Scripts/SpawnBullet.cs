@@ -26,7 +26,6 @@ public class SpawnBullet : MonoBehaviour
     {
         canShoot = false;
         animator.SetBool("IsShooting", true);
-        GetComponent<Movement>().enabled = false;
         yield return new WaitForSeconds(0.2f);
         Vector2 target = theCamera.transform.GetComponent<Camera>().ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
         Vector2 myPos = new Vector2(transform.position.x, transform.position.y);
@@ -37,7 +36,6 @@ public class SpawnBullet : MonoBehaviour
         projectile.SetActive(true);
         projectile.GetComponent<Rigidbody2D>().velocity = direction * 5 * speed;
         yield return new WaitForSeconds(0.2f);
-        GetComponent<Movement>().enabled = true;
         animator.SetBool("IsShooting", false);
         canShoot = true;
     }
