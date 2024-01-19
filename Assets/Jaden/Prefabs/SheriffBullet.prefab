@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6104887203114441175}
   - component: {fileID: 6104887203114441174}
   - component: {fileID: 6104887203114441173}
-  - component: {fileID: 6104887203114441172}
   - component: {fileID: 6104887203114441131}
+  - component: {fileID: 8811369771223833417}
   m_Layer: 0
   m_Name: SheriffBullet
   m_TagString: Untagged
@@ -111,23 +111,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.089654, y: 0.5422975}
   m_EdgeRadius: 0
---- !u!114 &6104887203114441172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6104887203114441130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d93c059ec6d408c4baa879cf54eb2a64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletSpeed: 1
-  bulletDamage: 5
-  shouldHitPlayers: 0
-  bulletDirection: {x: 0, y: 0}
-  bulletOffset: {x: 0, y: 0, z: 0}
 --- !u!50 &6104887203114441131
 Rigidbody2D:
   serializedVersion: 4
@@ -149,3 +132,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8811369771223833417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6104887203114441130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 043da0ea5d8d1ca4aa318fe0d4ab7dde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

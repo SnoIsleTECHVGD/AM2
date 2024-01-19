@@ -5,12 +5,10 @@ using System.Collections;
 [RequireComponent(typeof(SpriteRenderer))]
 public class EnemyBulletScript : MonoBehaviour
 {
-    /*
+    
     public int bulletSpeed = 1;
     public int bulletDamage = 5;
     public bool shouldHitPlayers = true;
-
-    public TimeSlow timeSlow;
 
     private BoxCollider2D myCollider;
     private SpriteRenderer mySprite;
@@ -34,31 +32,14 @@ public class EnemyBulletScript : MonoBehaviour
     }
 
     // Hit Detect
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.layer == 2) // Ignore Raycast
             return;
-
         Stats hitStats = collision.gameObject.GetComponent<Stats>();
 
         if (hitStats)
         {
-            if (hitStats.isPlayer != shouldHitPlayers || hitStats.isDead == true)
-            {
-                return;
-            }
-
-            Melee hitMeleeWeapon = collision.collider.gameObject.GetComponent<Melee>();
-
-            if (hitMeleeWeapon)
-            {
-                bulletDamage = hitMeleeWeapon.deflectDamage;
-                hitMeleeWeapon.deflectSound.Play();
-
-                Deflect();
-                return;
-            }
-
             hitStats.TakeDamage(bulletDamage);
         }
 
@@ -68,6 +49,6 @@ public class EnemyBulletScript : MonoBehaviour
     void Update()
     {
         myBody.velocity = bulletDirection * bulletSpeed;
-    }*/
+    }
 }
     

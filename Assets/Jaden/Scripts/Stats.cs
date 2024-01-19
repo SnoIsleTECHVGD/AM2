@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 public class Stats : MonoBehaviour
 {
     public int health;
-    public int attack;
-    // Update is called once per frame
     public void TakeDamage(int damage)
     {
         if (gameObject.name == "Player")

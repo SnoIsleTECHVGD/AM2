@@ -31,23 +31,23 @@ public class EnemyGun : MonoBehaviour
         bulletCooldown = fireTime + Random.Range(minTimeToShoot, maxTimeToShoot);
 
         GameObject newBullet = Instantiate(Bullet, transform.position, transform.parent.rotation);
-        BulletScript bulletScript = newBullet.GetComponent<BulletScript>();
+        EnemyBulletScript bulletScript = newBullet.GetComponent<EnemyBulletScript>();
 
-        if (transform.parent.parent.localScale.x == -1)
+        if (transform.parent.localScale.x == -1)
         {
             bulletScript.bulletOffset = -bulletOffset;
-            bulletScript.bulletDirection = transform.right;
+            bulletScript.bulletDirection = transform.right * 10;
+            Debug.Log(transform.right);
         }
         else
         {
             bulletScript.bulletOffset = bulletOffset;
-            bulletScript.bulletDirection = transform.right * -1;
+            bulletScript.bulletDirection = transform.right * -10;
+            Debug.Log(transform.right);
         }
 
         bulletScript.enabled = true;
     }
-
-    // Public
     public bool StartShooting()
     {
         if (canShoot == false || isShooting == true)
