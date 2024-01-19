@@ -16,15 +16,12 @@ public class Movement : MonoBehaviour
     private float lastCooldown;
     public float intervalBetweenDashing;
     Animator animator;
-    public GameObject WalkingParticle;
-    private Vector2 g = new Vector2(0, 0);
     // Start is called before the first frame update
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         grounded = true;
         animator = GetComponent<Animator>();
-        WalkingParticle = GameObject.Find("WalkingParticles");
     }
 
     // Update is called once per frame
@@ -55,7 +52,6 @@ public class Movement : MonoBehaviour
         {
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
             animator.SetInteger("WalkDir", 0);
-            WalkingParticle.GetComponent<ParticleSystem>().Stop();
         }
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
         {
@@ -81,7 +77,7 @@ public class Movement : MonoBehaviour
         cooldown = Time.realtimeSinceStartup  - lastCooldown - intervalBetweenDashing;
 
 
-        //Particle Stuff :))))))))))))
+        /*Particle Stuff :))))))))))))
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             if (grounded) 
@@ -108,7 +104,7 @@ public class Movement : MonoBehaviour
                 if(WalkingParticle.GetComponent<ParticleSystem>().isStopped)
                 WalkingParticle.GetComponent<ParticleSystem>().Play();
             }
-        }
+        } */
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

@@ -6,18 +6,8 @@ public class Trigger : MonoBehaviour
 {
     public GameObject player;
     public GameObject popupObject;
+    public GameObject text;
     public int popupNum;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private IEnumerator OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == player)
@@ -39,7 +29,17 @@ public class Trigger : MonoBehaviour
             else if (popupNum == 3)
             {
                 stuff.isVisible3 = true;
-                yield return new WaitForSeconds(5);
+                yield return waitForKeyPress(KeyCode.E);
+                text.GetComponent<Animator>().SetInteger("MrKom", 2);
+                yield return waitForKeyPress(KeyCode.E);
+                text.GetComponent<Animator>().SetInteger("MrKom", 3);
+                yield return waitForKeyPress(KeyCode.E);
+                text.GetComponent<Animator>().SetInteger("MrKom", 4);
+                yield return waitForKeyPress(KeyCode.E);
+                text.GetComponent<Animator>().SetInteger("MrKom", 5);
+                yield return waitForKeyPress(KeyCode.E);
+                text.GetComponent<Animator>().SetInteger("MrKom", 6);
+                yield return waitForKeyPress(KeyCode.E);
                 stuff.isVisible3 = false;
             }
             else if (popupNum == 4)
@@ -56,5 +56,20 @@ public class Trigger : MonoBehaviour
             }
             Destroy(gameObject);
         }
-    } 
+    }
+
+    private IEnumerator waitForKeyPress(KeyCode key)
+    {
+        bool done = false;
+        while (!done) // essentially a "while true", but with a bool to break out naturally
+        {
+            if (Input.GetKeyDown(key))
+            {
+                done = true; // breaks the loop
+            }
+            yield return null; // wait until next frame, then continue execution from here (loop continues)
+        }
+
+        // now this function returns
+    }
 }

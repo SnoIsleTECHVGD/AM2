@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: b45ab335120c4d94d995d97bf0df09df
+guid: 73d13574c1f28ac43993f3af137312ed
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 508817243638255489
-    second: Ship_2_0
+      213: 7165341987277837057
+    second: Mr.Kom5_0
+  - first:
+      213: -2897519526780440810
+    second: Mr.Kom5_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -90,50 +93,47 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ship_2_0
+      name: Mr.Kom5_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1247
-        height: 1500
-      alignment: 9
-      pivot: {x: 0.6806137, y: 0.52602607}
+        width: 1377
+        height: 620
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18fc6a6569eaf0700800000000000000
-      internalID: 508817243638255489
+      spriteID: 10313e5e298607360800000000000000
+      internalID: 7165341987277837057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mr.Kom5_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1377
+        height: 310
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f6e749751f9c7d0800000000000000
+      internalID: -2897519526780440810
       vertices: []
       indices: 
       edges: []
