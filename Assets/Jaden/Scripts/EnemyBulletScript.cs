@@ -42,7 +42,14 @@ public class EnemyBulletScript : MonoBehaviour
         {
             hitStats.TakeDamage(bulletDamage);
         }
-
+        if (collision.name == "Player")
+        {
+            if (!collision.GetComponent<Movement>().dashing)
+            {
+                Destroy(gameObject);
+            }
+        }
+        else
         Destroy(gameObject);
     }
     // Update is called once per frame

@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cayden/Scenes_C/Credits.unity
     guid: 0a16fd32f51cf474886670f1e611a4de
+  - enabled: 1
+    path: Assets/Jaden/LoseScreen.unity
+    guid: c01cf66c908ef234fa96907428cc0e85
   m_configObjects: {}
