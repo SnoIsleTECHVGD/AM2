@@ -82,14 +82,15 @@ public class Movement : MonoBehaviour
 
 
         //Particle Stuff :))))))))))))
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             WalkingParticle.GetComponent<ParticleSystem>().Play();
-            WalkingParticle.transform.position = WalkingParticle.transform.position * -1;
+            WalkingParticle.transform.position = new Vector3(0.228f, -1.751f, 0f);
         }
-        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             WalkingParticle.GetComponent<ParticleSystem>().Play();
+            WalkingParticle.transform.position = new Vector3(-0.228f, -1.751f, 0f);
         }
         else
         {
