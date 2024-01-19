@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6104887203114441172}
   - component: {fileID: 6104887203114441131}
   m_Layer: 0
-  m_Name: PlayerBullet
+  m_Name: SheriffBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 2683495038190684583, guid: 803d8211504a30640b3c6798b0baa8db, type: 3}
+  m_Sprite: {fileID: -2330028100482727972, guid: 3c932d8ad651010469d5addebc0b4af9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,18 +98,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.026149139, y: 0.015782714}
+  m_Offset: {x: 0.044826984, y: 0.023673952}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.216, y: 0.58005667}
+    oldSize: {x: 1.214, y: 0.57505614}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0522982, y: 0.6527779}
+  m_Size: {x: 1.089654, y: 0.5422975}
   m_EdgeRadius: 0
 --- !u!114 &6104887203114441172
 MonoBehaviour:
