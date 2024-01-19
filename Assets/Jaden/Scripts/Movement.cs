@@ -85,6 +85,7 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             WalkingParticle.GetComponent<ParticleSystem>().Play();
+            WalkingParticle.transform.position = WalkingParticle.transform.position * -1;
         }
         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
