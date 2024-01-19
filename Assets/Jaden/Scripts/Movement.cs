@@ -17,6 +17,7 @@ public class Movement : MonoBehaviour
     public float intervalBetweenDashing;
     Animator animator;
     public GameObject WalkingParticle;
+    private Vector2 g = new Vector2(0, 0);
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +50,6 @@ public class Movement : MonoBehaviour
             rb2d.velocity = new Vector2(speed, rb2d.velocity.y);
             animator.SetInteger("LastDir", 0);
             animator.SetInteger("WalkDir", 1);
-            WalkingParticle.GetComponent<ParticleSystem>().Play();
         } 
         else
         {
@@ -84,17 +84,30 @@ public class Movement : MonoBehaviour
         //Particle Stuff :))))))))))))
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
-            WalkingParticle.GetComponent<ParticleSystem>().Play();
-            WalkingParticle.transform.position = new Vector3(0.228f, -1.751f, 0f);
+            if (grounded) 
+            { 
+                WalkingParticle.GetComponent<ParticleSystem>().Play();
+                WalkingParticle.transform.localPosition = new Vector3(-0.536f, -1.751f, 0f);
+            }
         }
         else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            WalkingParticle.GetComponent<ParticleSystem>().Play();
-            WalkingParticle.transform.position = new Vector3(-0.228f, -1.751f, 0f);
+            if (grounded)
+            {
+                WalkingParticle.GetComponent<ParticleSystem>().Play();
+                WalkingParticle.transform.localPosition = new Vector3(0.536f, -1.751f, 0f);
+            }
         }
         else
         {
-            WalkingParticle.GetComponent<ParticleSystem>().Stop();
+            if (!grounded)
+            {
+                WalkingParticle.GetComponent<ParticleSystem>().Stop();
+            } else if (rb2d.velocity != g)
+            {
+                if(WalkingParticle.GetComponent<ParticleSystem>().isStopped)
+                WalkingParticle.GetComponent<ParticleSystem>().Play();
+            }
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
