@@ -6,8 +6,8 @@ public class Trigger : MonoBehaviour
 {
     public GameObject player;
     public GameObject popupObject;
-    public GameObject text;
     public int popupNum;
+    public GameObject text;
     private IEnumerator OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject == player)
@@ -23,7 +23,13 @@ public class Trigger : MonoBehaviour
             else if (popupNum == 2)
             {
                 stuff.isVisible2 = true;
-                yield return new WaitForSeconds(5);
+                yield return waitForKeyPress(KeyCode.E);
+                text.GetComponent<Animator>().SetInteger("Snake", 2);
+                yield return waitForKeyPress(KeyCode.E);
+                text.GetComponent<Animator>().SetInteger("Snake", 3);
+                yield return waitForKeyPress(KeyCode.E);
+                text.GetComponent<Animator>().SetInteger("Snake", 4);
+                yield return waitForKeyPress(KeyCode.E);
                 stuff.isVisible2 = false;
             }
             else if (popupNum == 3)
@@ -45,7 +51,11 @@ public class Trigger : MonoBehaviour
             else if (popupNum == 4)
             {
                 stuff.isVisible4 = true;
-                yield return new WaitForSeconds(5);
+                yield return waitForKeyPress(KeyCode.E);
+                text.GetComponent<Animator>().SetInteger("Sheriff", 2);
+                yield return waitForKeyPress(KeyCode.E);
+                text.GetComponent<Animator>().SetInteger("Sheriff", 3);
+                yield return waitForKeyPress(KeyCode.E);
                 stuff.isVisible4 = false;
             }
             else if (popupNum == 5)
