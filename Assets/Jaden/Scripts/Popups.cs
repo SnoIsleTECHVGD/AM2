@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Popups : MonoBehaviour
 {
+    public GameObject Sheriff;
     public bool isVisible1;
     public bool isVisible2;
     public bool isVisible3;
@@ -58,12 +59,12 @@ public class Popups : MonoBehaviour
         if (isVisible4 == true)
         {
             Popup4.SetActive(true);
-
+            Sheriff.GetComponent<EnemyAI>().enabled = false;
         }
         else
         {
             Popup4.SetActive(false);
-
+            Sheriff.GetComponent<EnemyAI>().enabled = true;
         }
         if (isVisible5 == true)
         {

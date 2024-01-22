@@ -280,6 +280,7 @@ MonoBehaviour:
   popupObject: {fileID: 1988031958}
   popupNum: 4
   text: {fileID: 342784250}
+  triggering: 0
 --- !u!212 &166505774
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6032,6 +6033,7 @@ MonoBehaviour:
   popupObject: {fileID: 1988031958}
   popupNum: 1
   text: {fileID: 1707972444}
+  triggering: 0
 --- !u!212 &610113644
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6473,6 +6475,7 @@ MonoBehaviour:
   popupObject: {fileID: 1988031958}
   popupNum: 2
   text: {fileID: 1323512297}
+  triggering: 0
 --- !u!212 &822970096
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7034,7 +7037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1812898231}
   weaponGrip: {fileID: 789658948}
-  maxDetectionRange: 20
+  maxDetectionRange: 15
   hasSeenPlayer: 0
   myGun: {fileID: 789658950}
 --- !u!114 &1111218155
@@ -71234,6 +71237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c3a02dd59aa3140bc547f17b40f307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sheriff: {fileID: 1111218150}
   isVisible1: 0
   isVisible2: 0
   isVisible3: 0
@@ -71333,6 +71337,7 @@ MonoBehaviour:
   popupObject: {fileID: 1988031958}
   popupNum: 3
   text: {fileID: 1763933594}
+  triggering: 0
 --- !u!212 &2035355170
 SpriteRenderer:
   m_ObjectHideFlags: 0
