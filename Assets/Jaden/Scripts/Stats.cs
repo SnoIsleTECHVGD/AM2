@@ -6,6 +6,7 @@ public class Stats : MonoBehaviour
 {
     public int health;
     public HealthBar healthBar;
+    public GameObject grave;
     public void TakeDamage(int damage)
     {
         if (gameObject.name == "Player")
@@ -28,6 +29,7 @@ public class Stats : MonoBehaviour
             }
             else
             {
+                Instantiate(grave, transform.position, Quaternion.Euler(0, 0, 0));
                 Destroy(gameObject);
             }
         }

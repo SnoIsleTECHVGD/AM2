@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Jaden/WinScreen.unity
     guid: c01cf66c908ef234fa96907428cc0e85
+  - enabled: 1
+    path: Assets/Jaden/LoseScreen.unity
+    guid: d4ac2be30404ace4aaa3e525316aa486
   m_configObjects: {}
