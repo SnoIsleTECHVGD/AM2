@@ -21,6 +21,10 @@ public class Stats : MonoBehaviour
             if (gameObject.CompareTag("Player"))
             {
                 SceneManager.LoadScene("LoseScreen");
+            } 
+            else if(gameObject.name == "Sheriff")
+            {
+                SceneManager.LoadScene("WinScreen");
             }
             else
             {
