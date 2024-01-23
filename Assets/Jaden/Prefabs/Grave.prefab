@@ -12,10 +12,11 @@ GameObject:
   - component: {fileID: 3869621368443962056}
   - component: {fileID: -8716525187548489469}
   - component: {fileID: 5686272387433233984}
-  - component: {fileID: 4365780743409768460}
+  - component: {fileID: 4218091096778175726}
+  - component: {fileID: -130460613071560284}
   m_Layer: 0
   m_Name: Grave
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105,7 +106,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &5686272387433233984
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -119,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.12638569, y: -1.4771212}
+  m_Offset: {x: -0.12638569, y: -1.4709752}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,9 +131,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.1696825, y: 1.0566027}
+  m_Size: {x: 4.1696825, y: 1.0689092}
   m_EdgeRadius: 0
---- !u!61 &4365780743409768460
+--- !u!61 &4218091096778175726
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,7 +146,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.47394174, y: 0.5292361}
+  m_Offset: {x: 0.46678603, y: 0.54050124}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -156,5 +157,17 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.874238, y: 2.9839702}
+  m_Size: {x: 2.8292716, y: 2.9404547}
   m_EdgeRadius: 0
+--- !u!114 &-130460613071560284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9140682866940741201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 625751452f8946a42b5d1e3162abf8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

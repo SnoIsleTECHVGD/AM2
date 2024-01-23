@@ -29,7 +29,7 @@ public class Stats : MonoBehaviour
             }
             else
             {
-                Instantiate(grave, transform.position, Quaternion.Euler(0, 0, 0));
+                Instantiate(grave, transform.position + new Vector3(0,1,0), Quaternion.Euler(0, 0, 0));
                 Destroy(gameObject);
             }
         }
