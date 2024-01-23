@@ -844,6 +844,7 @@ GameObject:
   - component: {fileID: 481321599}
   - component: {fileID: 481321598}
   - component: {fileID: 481321601}
+  - component: {fileID: 481321602}
   m_Layer: 0
   m_Name: Square (3)
   m_TagString: Platform
@@ -957,6 +958,20 @@ MonoBehaviour:
   player: {fileID: 1469300523}
   popupObject: {fileID: 1191476177}
   popupNum: 1
+  text: {fileID: 0}
+  triggering: 0
+--- !u!114 &481321602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481321597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c60f53860f0e03347bd73168ad01b429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &824059662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,7 +1075,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824059662}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5, y: 1.36, z: 0}
+  m_LocalPosition: {x: 5.51, y: 1.36, z: 0}
   m_LocalScale: {x: 6.9625, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1250,6 +1265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c3a02dd59aa3140bc547f17b40f307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Sheriff: {fileID: 0}
   isVisible1: 0
   isVisible2: 0
   isVisible3: 0
@@ -1500,7 +1516,6 @@ MonoBehaviour:
   cooldown: 0
   dashing: 0
   intervalBetweenDashing: 1
-  WalkingParticle: {fileID: 1678867114}
 --- !u!50 &1469300527
 Rigidbody2D:
   serializedVersion: 4
