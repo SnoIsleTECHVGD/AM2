@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: d75296c67ae12374f97e29cfea77778a
+guid: 862364a63fc7d26418319fca9f6e53b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2216146810311768363
-    second: Snake_Standing_0
+      213: -1428603080671290156
+    second: Sheriff_shooting_0
   - first:
-      213: -4799294073924754306
-    second: Snake_Standing_1
+      213: -6057029107040924786
+    second: Sheriff_shooting_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -52,7 +52,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,43 +121,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Snake_Standing_0
+      name: Sheriff_shooting_0
       rect:
         serializedVersion: 2
-        x: 245
-        y: 358
-        width: 599
-        height: 856
+        x: 2
+        y: 0
+        width: 706
+        height: 976
       alignment: 9
-      pivot: {x: 0.24336949, y: 0.38027903}
+      pivot: {x: 0.4826015, y: 0.4964041}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b297fb648c551ce10800000000000000
-      internalID: 2216146810311768363
+      spriteID: 4dc1f8331159c2ce0800000000000000
+      internalID: -1428603080671290156
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snake_Standing_1
+      name: Sheriff_shooting_1
       rect:
         serializedVersion: 2
-        x: 1292
-        y: 358
-        width: 602
-        height: 843
+        x: 706
+        y: 0
+        width: 706.5
+        height: 976
       alignment: 9
-      pivot: {x: 0.24464858, y: 0.38163197}
+      pivot: {x: 0.4925486, y: 0.49820203}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e74e31fa77b756db0800000000000000
-      internalID: -4799294073924754306
+      spriteID: e8bcf906e1c11fba0800000000000000
+      internalID: -6057029107040924786
       vertices: []
       indices: 
       edges: []

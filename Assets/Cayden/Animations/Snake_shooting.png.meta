@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: d75296c67ae12374f97e29cfea77778a
+guid: 7314b85f986b2af4e8b1035823a09a72
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2216146810311768363
-    second: Snake_Standing_0
+      213: 3215607237452802704
+    second: Snake_shooting_0
   - first:
-      213: -4799294073924754306
-    second: Snake_Standing_1
+      213: -3598236041254491694
+    second: Snake_shooting_1
+  - first:
+      213: -204972667339139753
+    second: Snake_shooting_2
+  - first:
+      213: 6193787799201384727
+    second: Snake_shooting_3
+  - first:
+      213: -6369777027415932452
+    second: Snake_shooting_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -121,43 +130,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Snake_Standing_0
+      name: Snake_shooting_0
       rect:
         serializedVersion: 2
-        x: 245
-        y: 358
-        width: 599
-        height: 856
+        x: 264
+        y: 357
+        width: 604
+        height: 846
       alignment: 9
-      pivot: {x: 0.24336949, y: 0.38027903}
+      pivot: {x: 0.24501507, y: 0.37783656}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b297fb648c551ce10800000000000000
-      internalID: 2216146810311768363
+      spriteID: 09aac85deb120ac20800000000000000
+      internalID: 3215607237452802704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Snake_Standing_1
+      name: Snake_shooting_1
       rect:
         serializedVersion: 2
-        x: 1292
-        y: 358
-        width: 602
-        height: 843
+        x: 1310
+        y: 357
+        width: 601
+        height: 871
       alignment: 9
-      pivot: {x: 0.24464858, y: 0.38163197}
+      pivot: {x: 0.23999654, y: 0.37177104}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e74e31fa77b756db0800000000000000
-      internalID: -4799294073924754306
+      spriteID: 2d9a40f726f701ec0800000000000000
+      internalID: -3598236041254491694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake_shooting_2
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 357
+        width: 599
+        height: 896
+      alignment: 9
+      pivot: {x: 0.23984677, y: 0.36206076}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755169ee17ac72df0800000000000000
+      internalID: -204972667339139753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake_shooting_3
+      rect:
+        serializedVersion: 2
+        x: 3416
+        y: 357
+        width: 601
+        height: 871
+      alignment: 9
+      pivot: {x: 0.24094974, y: 0.37185246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7190c81ff21c4f550800000000000000
+      internalID: 6193787799201384727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake_shooting_4
+      rect:
+        serializedVersion: 2
+        x: 4544
+        y: 357
+        width: 601
+        height: 846
+      alignment: 9
+      pivot: {x: 0.24310881, y: 0.37958318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd10e66ca810a97a0800000000000000
+      internalID: -6369777027415932452
       vertices: []
       indices: 
       edges: []

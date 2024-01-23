@@ -31,15 +31,17 @@ public class EnemyAI : MonoBehaviour
         if (hasSeenPlayer == false)
         {
             myGun.StopShooting();
-
+            GetComponent<Animator>().SetBool("IsShooting", false);
             int layerMask = LayerMask.GetMask("Player");
             RaycastHit2D cast = Physics2D.Raycast(transform.position, targetTransform.position - transform.position, maxDetectionRange, layerMask);
 
             if (cast.transform == targetTransform)
             {
                 hasSeenPlayer = true;
+                GetComponent<Animator>().SetBool("canSee", true);
             }
-        } else
+        } 
+        else
         {
             if (transform.localScale.x == -1)
             {
@@ -53,6 +55,7 @@ public class EnemyAI : MonoBehaviour
             }
 
             myGun.StartShooting();
+            GetComponent<Animator>().SetBool("IsShooting", true);
         }
     }
     
