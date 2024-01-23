@@ -8,7 +8,6 @@ public class Movement : MonoBehaviour
     Rigidbody2D rb2d;
     public float jumpSpeed = 75;
     public int maxSpeed = 10;
-    public int fallSpeed = 10;
     public float maxJump = 10;
     private bool grounded = true;
     public float cooldown = 0;
@@ -52,10 +51,6 @@ public class Movement : MonoBehaviour
         {
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
             animator.SetInteger("WalkDir", 0);
-        }
-        if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-        {
-            rb2d.velocity = new Vector2(rb2d.velocity.x, -fallSpeed);
         }
         if(rb2d.velocity.x > maxSpeed)
         {

@@ -18,7 +18,7 @@ public class Trigger : MonoBehaviour
             if (popupNum == 1)
             {
                 stuff.isVisible1 = true;
-                yield return new WaitForSeconds(5);
+                yield return new WaitForSeconds(10);
                 stuff.isVisible1 = false;
             }
             else if (popupNum == 2)
