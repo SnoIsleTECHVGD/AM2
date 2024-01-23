@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class Stats : MonoBehaviour
 {
     public int health;
+    public HealthBar healthBar;
     public void TakeDamage(int damage)
     {
         if (gameObject.name == "Player")
@@ -12,6 +13,7 @@ public class Stats : MonoBehaviour
             Movement movementScript = GetComponent<Movement>();
             if (movementScript.dashing == false)
                 health -= damage;
+                healthBar.SetHealth(health);
         } else 
         health -= damage;
         if(health <= 0)
