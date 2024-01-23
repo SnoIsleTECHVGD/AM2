@@ -16,6 +16,8 @@ public class EnemyAI : MonoBehaviour
     private Stats myStats;
     public EnemyGun myGun;
 
+    public bool hasDrawn = false;
+    public int ez = 1;
     void Start()
     {
         myStats = GetComponent<Stats>();
@@ -37,8 +39,18 @@ public class EnemyAI : MonoBehaviour
 
             if (cast.transform == targetTransform)
             {
-                hasSeenPlayer = true;
-                GetComponent<Animator>().SetBool("canSee", true);
+                if (ez == 0)
+                {
+                    hasSeenPlayer = true;
+                    GetComponent<Animator>().SetBool("canSee", false);
+                    ez = 1;
+                }
+                else
+                {
+                    Debug.Log(ez);
+                    hasSeenPlayer = true;
+                    GetComponent<Animator>().SetBool("canSee", false);
+                }
             }
         } 
         else
@@ -58,5 +70,4 @@ public class EnemyAI : MonoBehaviour
             GetComponent<Animator>().SetBool("IsShooting", true);
         }
     }
-    
 }
