@@ -322,7 +322,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 200581955}
         m_TargetAssemblyTypeName: UIButtons, Assembly-CSharp
-        m_MethodName: Play
+        m_MethodName: Back
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
